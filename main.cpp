@@ -9,13 +9,16 @@ int main()
 	AMixer Mixer;
 	AFruit Fruit;
 
-	for(int i = 1; i <=3; ++i)
-	{
-		cin >> Fruit.FruitName;
+	Mixer.GetMatter(Fruit.Orange);
+	Mixer.MakeJuice();
 
-		Mixer.GetMatter(Fruit.FruitName);
-		Mixer.MakeJuice();
-	}
+	Mixer.GetMatter(Fruit.Pineapple);
+	Mixer.MakeJuice();
+
+	Mixer.GetMatter(Fruit.Apple);
+	Mixer.MakeJuice();
+
+	Fruit.~AFruit();
 
 	return 0;
 }
