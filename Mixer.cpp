@@ -4,9 +4,14 @@ AMixer::AMixer()
 {
 }
 
-void AMixer::MakeJuice(string matter)
+void AMixer::MakeJuice()
 {
-	cout << matter << " 쥬스가 만들어 졌습니다. \n";
+	cout << this->Matter << " 쥬스가 만들어 졌습니다. \n";
 
 	return;
+}
+
+void AMixer::GetMatter(string matter)
+{
+	Matter = matter;
 }

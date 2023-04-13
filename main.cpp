@@ -7,13 +7,14 @@ int main()
 {
 	AMixer Mixer;
 
-	string Orange = "오렌지";
-	string Pineapple = "파인애플";
-	string Apple = "사과";
+	Mixer.GetMatter("오렌지");
+	Mixer.MakeJuice();
 
-	Mixer.MakeJuice(Orange);
-	Mixer.MakeJuice(Pineapple);
-	Mixer.MakeJuice(Apple);
+	Mixer.GetMatter("파인애플");
+	Mixer.MakeJuice();
+
+	Mixer.GetMatter("사과");
+	Mixer.MakeJuice();
 
 	return 0;
 }
