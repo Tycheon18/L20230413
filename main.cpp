@@ -1,20 +1,21 @@
 #include <iostream>
 #include "Mixer.h"
+#include "Fruit.h"
 
 using namespace std;
 
 int main()
 {
 	AMixer Mixer;
+	AFruit Fruit;
 
-	Mixer.GetMatter("오렌지");
-	Mixer.MakeJuice();
+	for(int i = 1; i <=3; ++i)
+	{
+		cin >> Fruit.FruitName;
 
-	Mixer.GetMatter("파인애플");
-	Mixer.MakeJuice();
-
-	Mixer.GetMatter("사과");
-	Mixer.MakeJuice();
+		Mixer.GetMatter(Fruit.FruitName);
+		Mixer.MakeJuice();
+	}
 
 	return 0;
 }

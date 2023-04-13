@@ -7,6 +7,7 @@ class AMixer
 {
 public:
 	AMixer();
+	virtual ~AMixer();
 	void MakeJuice();
 	void GetMatter(string matter);
 
